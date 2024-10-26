@@ -107,7 +107,7 @@ async function searchByFirstLetter(term){
     closeNav()
     rowData.innerHTML = ''
     $('.innerLoading').fadeIn(300)
-    term == " " ? term = "a" : ""
+    term == " " ? term = "a" : " "
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${term}`)
     let data = await response.json()
     data.meals ? displayMaeals(data.meals) : displayMaeals([])
