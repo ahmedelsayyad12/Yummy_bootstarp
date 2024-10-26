@@ -4,7 +4,7 @@ body{
     overflow: hidden;
 }
 .loadingScreen{
-    z-index: 999;
+    z-index: 9999;
     display: flex;
 }
 .loader {
@@ -23,7 +23,7 @@ body{
    width: 50px;
 }
 .sideBar{
-    z-index: 99;
+    z-index: 999;
 }
 .navHeader{
     background-color: #ff0000;
