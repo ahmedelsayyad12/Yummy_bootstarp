@@ -61,10 +61,10 @@ $('.meal').on('click',function(){
 // search
 
 $('.search').on('click',()=>{
-  $('.loadingScreen').fadeIn(500) 
+  $('.innerLoading').fadeIn(500) 
     closeNav()
     showSearchInputs()
-    $('.loadingScreen').fadeOut(500) 
+    $('.innerLoading').fadeOut(500) 
 })
 function showSearchInputs(){
     searchContainer.innerHTML=`
@@ -119,10 +119,10 @@ async function searchByFirstLetter(term){
 // start of categories
 
 $('.categories').on('click',()=>{
-    $('.loadingScreen').fadeIn(300)
+    $('.innerLoading').fadeIn(300)
     closeNav()
     getCategories()
-    $('.loadingScreen').fadeOut(300)
+    $('.innerLoading').fadeOut(300)
 })
 async function getCategories(){
     rowData.innerHTML = ''
@@ -168,10 +168,10 @@ async function getCategorieMeals(term){
 // start of area
 
 $('.area').on('click',()=>{
-    $('.loadingScreen').fadeIn(300)
+    $('.innerLoading').fadeIn(300)
     closeNav()
     getArea()
-    $('.loadingScreen').fadeOut(300)
+    $('.innerLoading').fadeOut(300)
 })
 async function getArea(){
     rowData.innerHTML = ''
@@ -214,10 +214,10 @@ async function getAreaeMeals(term){
  // start of Ingredients
 
 $('.ingredients').on('click',()=>{
-    $('.loadingScreen').fadeIn(300)
+    $('.innerLoading').fadeIn(300)
     closeNav()
     getIngredients()
-    $('.loadingScreen').fadeOut(300)
+    $('.innerLoading').fadeOut(300)
 })
 async function getIngredients(){
     rowData.innerHTML = ''
@@ -320,10 +320,10 @@ rowData.innerHTML = displayData
 //   end of  details
 //   start of  contact
 $('.contactUs').on('click',()=>{
-    $('.loadingScreen').fadeIn(300)
+    $('.innerLoading').fadeIn(300)
     showContact()
     closeNav()
-    $('.loadingScreen').fadeOut(300)
+    $('.innerLoading').fadeOut(300)
 })
 
 function showContact(){
