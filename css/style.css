@@ -1,0 +1,69 @@
+body{
+    background-color: #fff;
+    color: black !important;
+    overflow: hidden;
+}
+.loadingScreen{
+    z-index: 999;
+    display: flex;
+}
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #add8e6;
+    border-right-color: orange;
+    animation: l2 1s infinite linear;
+    
+}
+
+@keyframes l2 {to{transform: rotate(1turn)}}
+/* start of side bar */
+.logo{
+   width: 50px;
+}
+.sideBar{
+    z-index: 99;
+}
+.navHeader{
+    background-color: #ff0000;
+    color: #fff;
+}
+.navTabs{
+    background-image:linear-gradient(orange , rgb(167, 0, 0)) ;
+    color: #fff;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.links li {
+    top: 300px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.innerLoading{
+    position: absolute;
+    display: flex;
+}
+.mealLayer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: all .5s;
+}
+.meal:hover .mealLayer{
+    top: 0;
+}
+.fa-drumstick-bite{
+    color: orange;
+}
+.alert{
+    width: fit-content;
+}
+/* media */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 350px;
+    }
+  }
