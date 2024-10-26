@@ -42,7 +42,7 @@ body{
     font-weight: 600;
 }
 .innerLoading{
-    position: absolute;
+    z-index: 99;
     display: flex;
 }
 .mealLayer{

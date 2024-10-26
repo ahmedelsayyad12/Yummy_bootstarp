@@ -61,10 +61,10 @@ $('.meal').on('click',function(){
 // search
 
 $('.search').on('click',()=>{
-  $('.innerLoading').fadeIn(500) 
+  $('.loadingScreen').fadeIn(500) 
     closeNav()
     showSearchInputs()
-    $('.innerLoading').fadeOut(500) 
+    $('.loadingScreen').fadeOut(500) 
 })
 function showSearchInputs(){
     searchContainer.innerHTML=`
@@ -79,12 +79,16 @@ function showSearchInputs(){
     `
     rowData.innerHTML=''
     $('#searchByName').on('keyup',function(){
+        $('.innerLoading').fadeIn(300)
         let term =  $(this).val()
         searchByName(term)
+        $('.innerLoading').fadeOut(300) 
     })
     $('#searchByFirstLetter').on('keyup',function(){
+        $('.innerLoading').fadeIn(300)
         let term =  $(this).val()
         searchByFirstLetter(term)
+        $('.innerLoading').fadeOut(300) 
     })
 
 }
@@ -268,7 +272,6 @@ async function getMealDetails(term) {
     
     closeNav
 }
-// if (arr[`strIngridedint${i}`])
 function  displayMealDetails(arr){
     rowData.innerHTML = ''
     let Ingredient = ''
@@ -315,8 +318,10 @@ rowData.innerHTML = displayData
 //   end of  details
 //   start of  contact
 $('.contactUs').on('click',()=>{
+    $('.loadingScreen').fadeIn(300)
     showContact()
     closeNav()
+    $('.loadingScreen').fadeOut(300)
 })
 
 function showContact(){
