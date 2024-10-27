@@ -42,7 +42,7 @@ function  displayMaeals(arr){
         <div class="col-md-3">
         <div class="meal position-relative overflow-hidden rounded-2 cursorPointer" id="${arr[i].idMeal}">
         <img src="${arr[i].strMealThumb}" class="w-100" alt="">
-        <div class="mealLayer position-absolute d-flex justify-content-center align-items-center text-black p-2">
+        <div class="mealLayer position-absolute d-flex justify-content-start align-items-center text-black p-2">
         <h3>${arr[i].strMeal}</h3>
         </div>
         </div>
